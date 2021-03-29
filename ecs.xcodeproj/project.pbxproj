@@ -7,24 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40D83B8A260D3CA0008A7C6A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83B89260D3CA0008A7C6A /* main.cpp */; };
+		40D83B9C260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D83B9A260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib */; };
+		40D83B9D260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 40D83B9A260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		40D83B9E260E8A2B008A7C6A /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D83B9B260E8A2B008A7C6A /* libSDL2-2.0.0.dylib */; };
+		40D83B9F260E8A2B008A7C6A /* libSDL2-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 40D83B9B260E8A2B008A7C6A /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		40D83BA52610DB62008A7C6A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BA42610DB62008A7C6A /* main.cpp */; };
+		40D83BA82610DC53008A7C6A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BA72610DC53008A7C6A /* game.cpp */; };
+		40D83BAE2610E3C6008A7C6A /* player-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BAD2610E3C6008A7C6A /* player-system.cpp */; };
+		40D83BB02610E716008A7C6A /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BAF2610E716008A7C6A /* scene.cpp */; };
+		40D83BC226126F21008A7C6A /* playerSprite.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40D83BBF26126EDA008A7C6A /* playerSprite.png */; };
+		40D83BC52613B1A5008A7C6A /* physics-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BC42613B1A5008A7C6A /* physics-system.cpp */; };
+		40D83BC82613C6F5008A7C6A /* render-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BC72613C6F5008A7C6A /* render-system.cpp */; };
+		40D83BCB261510E4008A7C6A /* animation-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BCA261510E4008A7C6A /* animation-system.cpp */; };
+		40D83BCE261E3F4F008A7C6A /* camera-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BCD261E3F4F008A7C6A /* camera-system.cpp */; };
+		40D83BD2261F254A008A7C6A /* health-system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BD1261F254A008A7C6A /* health-system.cpp */; };
+		40D83BDD2621FAC9008A7C6A /* tile_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40D83BDC2621FAC9008A7C6A /* tile_map.cpp */; };
+		40D83BE02622057B008A7C6A /* tileSprite.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40D83BDF26220572008A7C6A /* tileSprite.png */; };
+		40D83BE126220829008A7C6A /* tileSet.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40D83BDE2621FECD008A7C6A /* tileSet.json */; };
+		40D83BE326220DEA008A7C6A /* tileMap.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40D83BE226220DA3008A7C6A /* tileMap.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		40D83B84260D3CA0008A7C6A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				40D83BC226126F21008A7C6A /* playerSprite.png in CopyFiles */,
+				40D83BE02622057B008A7C6A /* tileSprite.png in CopyFiles */,
+				40D83BE326220DEA008A7C6A /* tileMap.json in CopyFiles */,
+				40D83BE126220829008A7C6A /* tileSet.json in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D83BA0260E8A2B008A7C6A /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40D83B9F260E8A2B008A7C6A /* libSDL2-2.0.0.dylib in Embed Libraries */,
+				40D83B9D260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40D83B86260D3CA0008A7C6A /* ecs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ecs; sourceTree = BUILT_PRODUCTS_DIR; };
-		40D83B89260D3CA0008A7C6A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		40D83B95260E4DE9008A7C6A /* world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = world.h; sourceTree = "<group>"; };
+		40D83B9A260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../usr/local/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		40D83B9B260E8A2B008A7C6A /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../usr/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		40D83BA12610AC94008A7C6A /* components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = components.h; sourceTree = "<group>"; };
+		40D83BA22610B599008A7C6A /* aabb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
+		40D83BA42610DB62008A7C6A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		40D83BA62610DBE4008A7C6A /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		40D83BA72610DC53008A7C6A /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		40D83BA92610DCB5008A7C6A /* timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		40D83BAB2610E335008A7C6A /* player-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "player-system.h"; sourceTree = "<group>"; };
+		40D83BAD2610E3C6008A7C6A /* player-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "player-system.cpp"; sourceTree = "<group>"; };
+		40D83BAF2610E716008A7C6A /* scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scene.cpp; sourceTree = "<group>"; };
+		40D83BB326126738008A7C6A /* sprite_ids.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sprite_ids.h; sourceTree = "<group>"; };
+		40D83BBF26126EDA008A7C6A /* playerSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerSprite.png; sourceTree = "<group>"; };
+		40D83BC32613B14F008A7C6A /* physics-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "physics-system.h"; sourceTree = "<group>"; };
+		40D83BC42613B1A5008A7C6A /* physics-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "physics-system.cpp"; sourceTree = "<group>"; };
+		40D83BC62613C6AB008A7C6A /* render-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "render-system.h"; sourceTree = "<group>"; };
+		40D83BC72613C6F5008A7C6A /* render-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "render-system.cpp"; sourceTree = "<group>"; };
+		40D83BC9261510B0008A7C6A /* animation-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "animation-system.h"; sourceTree = "<group>"; };
+		40D83BCA261510E4008A7C6A /* animation-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "animation-system.cpp"; sourceTree = "<group>"; };
+		40D83BCC261E3F06008A7C6A /* camera-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "camera-system.h"; sourceTree = "<group>"; };
+		40D83BCD261E3F4F008A7C6A /* camera-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "camera-system.cpp"; sourceTree = "<group>"; };
+		40D83BCF261E3FE3008A7C6A /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		40D83BD0261F2511008A7C6A /* health-system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "health-system.h"; sourceTree = "<group>"; };
+		40D83BD1261F254A008A7C6A /* health-system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "health-system.cpp"; sourceTree = "<group>"; };
+		40D83BD82621D26C008A7C6A /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		40D83BDB2621FA30008A7C6A /* tile_map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tile_map.h; sourceTree = "<group>"; };
+		40D83BDC2621FAC9008A7C6A /* tile_map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tile_map.cpp; sourceTree = "<group>"; };
+		40D83BDE2621FECD008A7C6A /* tileSet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tileSet.json; sourceTree = "<group>"; };
+		40D83BDF26220572008A7C6A /* tileSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSprite.png; sourceTree = "<group>"; };
+		40D83BE226220DA3008A7C6A /* tileMap.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tileMap.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D83B9E260E8A2B008A7C6A /* libSDL2-2.0.0.dylib in Frameworks */,
+				40D83B9C260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +106,12 @@
 		40D83B7D260D3CA0008A7C6A = {
 			isa = PBXGroup;
 			children = (
-				40D83B88260D3CA0008A7C6A /* ecs */,
+				40D83BD72621D258008A7C6A /* json */,
+				40D83BC126126EEA008A7C6A /* Resources */,
+				40D83BA32610DA0E008A7C6A /* src */,
+				40D83B88260D3CA0008A7C6A /* base */,
 				40D83B87260D3CA0008A7C6A /* Products */,
+				40D83B99260E8A2B008A7C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +123,86 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		40D83B88260D3CA0008A7C6A /* ecs */ = {
+		40D83B88260D3CA0008A7C6A /* base */ = {
 			isa = PBXGroup;
 			children = (
-				40D83B89260D3CA0008A7C6A /* main.cpp */,
+				40D83BDB2621FA30008A7C6A /* tile_map.h */,
+				40D83BAA2610E30E008A7C6A /* systems */,
+				40D83B95260E4DE9008A7C6A /* world.h */,
+				40D83BA12610AC94008A7C6A /* components.h */,
+				40D83BA22610B599008A7C6A /* aabb.h */,
+				40D83BA62610DBE4008A7C6A /* game.h */,
+				40D83BA92610DCB5008A7C6A /* timer.h */,
+				40D83BB326126738008A7C6A /* sprite_ids.h */,
+				40D83BCF261E3FE3008A7C6A /* constants.h */,
 			);
-			path = ecs;
+			path = base;
+			sourceTree = "<group>";
+		};
+		40D83B99260E8A2B008A7C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40D83B9A260E8A2B008A7C6A /* libSDL2_image-2.0.0.dylib */,
+				40D83B9B260E8A2B008A7C6A /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40D83BA32610DA0E008A7C6A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				40D83BAC2610E38D008A7C6A /* systems */,
+				40D83BA42610DB62008A7C6A /* main.cpp */,
+				40D83BA72610DC53008A7C6A /* game.cpp */,
+				40D83BAF2610E716008A7C6A /* scene.cpp */,
+				40D83BDC2621FAC9008A7C6A /* tile_map.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		40D83BAA2610E30E008A7C6A /* systems */ = {
+			isa = PBXGroup;
+			children = (
+				40D83BAB2610E335008A7C6A /* player-system.h */,
+				40D83BC32613B14F008A7C6A /* physics-system.h */,
+				40D83BC62613C6AB008A7C6A /* render-system.h */,
+				40D83BC9261510B0008A7C6A /* animation-system.h */,
+				40D83BCC261E3F06008A7C6A /* camera-system.h */,
+				40D83BD0261F2511008A7C6A /* health-system.h */,
+			);
+			path = systems;
+			sourceTree = "<group>";
+		};
+		40D83BAC2610E38D008A7C6A /* systems */ = {
+			isa = PBXGroup;
+			children = (
+				40D83BAD2610E3C6008A7C6A /* player-system.cpp */,
+				40D83BC42613B1A5008A7C6A /* physics-system.cpp */,
+				40D83BC72613C6F5008A7C6A /* render-system.cpp */,
+				40D83BCA261510E4008A7C6A /* animation-system.cpp */,
+				40D83BCD261E3F4F008A7C6A /* camera-system.cpp */,
+				40D83BD1261F254A008A7C6A /* health-system.cpp */,
+			);
+			path = systems;
+			sourceTree = "<group>";
+		};
+		40D83BC126126EEA008A7C6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40D83BE226220DA3008A7C6A /* tileMap.json */,
+				40D83BDE2621FECD008A7C6A /* tileSet.json */,
+				40D83BDF26220572008A7C6A /* tileSprite.png */,
+				40D83BBF26126EDA008A7C6A /* playerSprite.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40D83BD72621D258008A7C6A /* json */ = {
+			isa = PBXGroup;
+			children = (
+				40D83BD82621D26C008A7C6A /* json.h */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,9 +212,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40D83B8D260D3CA0008A7C6A /* Build configuration list for PBXNativeTarget "ecs" */;
 			buildPhases = (
-				40D83B82260D3CA0008A7C6A /* Sources */,
 				40D83B83260D3CA0008A7C6A /* Frameworks */,
 				40D83B84260D3CA0008A7C6A /* CopyFiles */,
+				40D83BA0260E8A2B008A7C6A /* Embed Libraries */,
+				40D83B82260D3CA0008A7C6A /* Sources */,
 			);
 			buildRules = (
 			);
@@ -118,7 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40D83B8A260D3CA0008A7C6A /* main.cpp in Sources */,
+				40D83BD2261F254A008A7C6A /* health-system.cpp in Sources */,
+				40D83BC52613B1A5008A7C6A /* physics-system.cpp in Sources */,
+				40D83BCB261510E4008A7C6A /* animation-system.cpp in Sources */,
+				40D83BB02610E716008A7C6A /* scene.cpp in Sources */,
+				40D83BC82613C6F5008A7C6A /* render-system.cpp in Sources */,
+				40D83BA52610DB62008A7C6A /* main.cpp in Sources */,
+				40D83BDD2621FAC9008A7C6A /* tile_map.cpp in Sources */,
+				40D83BCE261E3F4F008A7C6A /* camera-system.cpp in Sources */,
+				40D83BA82610DC53008A7C6A /* game.cpp in Sources */,
+				40D83BAE2610E3C6008A7C6A /* player-system.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +392,9 @@
 		40D83B8E260D3CA0008A7C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,7 +402,9 @@
 		40D83B8F260D3CA0008A7C6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
